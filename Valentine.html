@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Happy Valentine's Day!</title>
+    <style>
+      body {
+        background-image: url("https://www.eatyourselfskinny.com/wp-content/uploads/2021/02/strawberry-donuts-3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: black;
+      }
+
+      .container {
+        background: white;
+        max-width: 700px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+        padding: 10px 0px 40px 0px;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 60px;
+        color: #fe8ea9;
+      }
+
+      .emph {
+        color: #fed3dc;
+      }
+
+      h2 {
+        color: #fe8ea9;
+        font-size: 40px;
+        text-align: center;
+      }
+
+      img {
+        max-width: 400px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 8px;
+      }
+
+      .buttons {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+      }
+
+      .yes {
+        padding: 10px 30px;
+        margin: 0px 20px;
+        color: white;
+        background: red;
+        border: none;
+        border-radius: 8px;
+        transition: all 200ms ease;
+        cursor: pointer;
+      }
+
+      .no {
+        padding: 10px 30px;
+        margin: 0px 20px;
+        color: white;
+        background: red;
+        border: none;
+        border-radius: 8px;
+        transition: all 200ms ease;
+        cursor: pointer;
+      }
+
+      button:hover {
+        opacity: 50%;
+      }
+
+      .middle {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 100px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>
+        Irfan,<br />I'm <em><span class="emph">do</span></em
+        >nuts about <em><span class="emph">you</span>!</em><br />🍩🍩🍩
+      </h1>
+
+      <div class="middle">
+        <img
+          src="https://lh3.google.com/pw/AMWts8AWFZqtH8UDKpklOaxeUZjv2I1XsDfMlT_yv7ea1whGQwSmxFS6dAajHxOZR1xgaunWpt6ztr635hcH6HS6E_08HpVtP-I=w1232-h1642-no?authuser=0"
+        />
+      </div>
+      <h2>Will you be my Valentine? 💋</h2>
+      <div class="buttons">
+        <button class="yes">Yes</button>
+        <button class="no">No</button>
+      </div>
+    </div>
+  </body>
+  <script>
+    let yesButton = document.querySelector(".yes");
+    yesButton.addEventListener("click", happy);
+    let noButton = document.querySelector(".no");
+    noButton.addEventListener("click", sad);
+    let h2 = document.querySelector("h2");
+    let middle = document.querySelector(".middle");
+
+    function happy() {
+      h2.innerHTML = "😍🥰";
+    }
+
+    function sad() {
+      h2.innerHTML = "☹️😭";
+    }
+  </script>
+</html>
