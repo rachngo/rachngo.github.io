@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Pacifico"
+    />
+    <title>Happy Birthday!</title>
+  </head>
+  <style>
+    body {
+      background-image: url("https://images.pexels.com/photos/63695/pexels-photo-63695.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: black;
+    }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fbf2de;
+      max-width: 700px;
+      display: block;
+      margin: 0 auto;
+      border-radius: 10px;
+      padding: 10px 0px 40px 0px;
+    }
+
+    h1 {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      font-family: "Pacifico", serif;
+      font-size: 70px;
+    }
+    h2 {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      font-family: "Pacifico", serif;
+      font-size: 50px;
+      line-height: 1;
+    }
+
+    img {
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+      border-radius: 300px;
+    }
+
+    .img_wrap {
+      position: relative;
+      text-align: center;
+      border-radius: 300px;
+      max-width: 400px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .img_description {
+      position: absolute;
+      top: 85px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      color: black;
+      visibility: hidden;
+      opacity: 0;
+      text-align: center;
+      transition: opacity 0.2s, visibility 0.5s;
+      color: #ff0000;
+      font-family: "pacifico", serif;
+      font-size: 30px;
+    }
+    .img_wrap:hover .img_description {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>Irfan, you rock! 🎸</h1>
+      <br />
+      <div class="img_wrap">
+        <img
+          src="https://media.npr.org/assets/img/2017/03/18/gettyimages-74254317-1-_custom-aef94890d4830616c516c0fd20eb120fdb2d7136.jpg"
+          max
+          width="400px"
+        />
+        <p class="img_description">Have a Berry good birthday!</p>
+        <br />
+        <h2>Love, <br />Rachel</h2>
+      </div>
+    </div>
+  </body>
+</html>
